@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>.text1{
+      position: absolute;
+      top: 90px;
+      left: 90px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 750;
+      font-size: 3.75rem;
+      letter-spacing: -0.75px;
+  }
+  .text2{
+      position: absolute;
+      top: 370px;
+      left: 90px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 0.80rem;
+      font-weight: 500;
+  }
+  .ordernow{
+      position: absolute;
+      z-index: 1;
+      top: 480px;
+      left: 90px;
+      background-color: #BFDBF7;
+      padding: 20px;
+      border: none;
+      border-radius: 8px;
+      width: 170px;
+      color: white;
+      text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+      font-weight: 750;
+      box-shadow: 0px 10px 20px #BFDBF7;
+      transition: 500ms ease;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .ordernow:hover{
+      background-color: #6daff2;
+      box-shadow: 0px 10px 20px #6daff2;
+  }
+  .div1{
+      position: absolute;
+      top: 55px;
+      left: 0px;
+      background-color: #BFDBF7;
+      width: 1232px;
+      height: 3px;
+  
+  }
+  u{
+      color: #BFDBF7;
+  }
+  h1{
+      position: absolute;
+      top: 8px;
+      left: 450px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 750;
+      font-size: 0.9rem; 
+      letter-spacing: -0.5px;
+      z-index: 1;
+  }
+  .home1{
+      position: absolute;
+      left: 425px;
+      transition: 400ms ease;
+  }
+  .home2{
+      position: absolute;
+      left: 520px;
+      transition: 400ms ease;
+  }
+  .home3{
+      position: absolute;
+      left: 618px;
+      transition: 400ms ease;
+  }
+  .home4{
+      position: absolute;
+      left: 748px;
+      transition: 400ms ease;
+  }
+  .home5{
+      position: absolute;
+      left: 50px;
+      transition: 400ms ease;
+  }
+  .home1:hover,
+  .home2:hover,
+  .home3:hover,
+  .home4:hover,
+  .home5:hover{
+      border: 3.5px solid #BFDBF7 ;
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+  }
+  .img1{
+      position: absolute;
+      top: 175px;
+      left: 695px;
+      border-radius: 50%;
+      box-shadow: 0px 20px 30px rgb(0, 0, 0, 0.75);
+  }
+  .r1{
+      position: absolute;
+      top: 60px;
+      left: 100px;
+      z-index: 2;
+      border-radius: 10px;
+  }
+  .r2{
+      position: absolute;
+      top: 60px;
+      left: 480px;
+      z-index: 2;
+      height: 139px;
+      border-radius: 10px;
+  }
+  .r3{
+      position: absolute;
+      top: 60px;
+      left: 860px;
+      z-index: 2;
+      height: 139px;
+      border-radius: 10px;
+  }
+  .button1{
+      position: absolute;
+      top: 210px;
+      left: 105px;
+      z-index: 2;
+      padding: 10px;
+      background-color: #BFDBF7;
+      border: transparent;
+      border-radius: 10px;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 750;
+      transition: 400ms ease;
+  }
+  .button2{
+      position: absolute;
+      top: 210px;
+      left: 490px;
+      z-index: 2;
+      padding: 10px;
+      background-color: #BFDBF7;
+      border: transparent;
+      border-radius: 10px;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 750;
+      transition: 400ms ease;
+  }
+  .button3{
+      position: absolute;
+      top: 210px;
+      left: 874px;
+      z-index: 2;
+      padding: 10px;
+      background-color: #BFDBF7;
+      border: transparent;
+      border-radius: 10px;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 750;
+      transition: 400ms ease;
+  }
+  .button1:hover,
+  .button2:hover,
+  .button3:hover{
+      background-color: #6daff2;
+  }
+  .bg{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background-color: rgb(0, 0, 0, 0.6);
+      width: 1232px;
+      height: 598px;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+  }
+  .q{
+      position: absolute;
+      top: 204px;
+      left: 215px;
+      z-index: 2;
+      font-size: 1.2rem;
+  }
+  .w{
+      position: absolute;
+      top: 204px;
+      left: 603px;
+      z-index: 2;
+      font-size: 1.2rem;
+  }
+  .e{
+      position: absolute;
+      top: 204px;
+      left: 988px;
+      z-index: 2;
+      font-size: 1.2rem;
+  }
+  input{
+      position: absolute;
+      z-index: 2;
+      background-color: transparent;
+      border: 3px  solid #BFDBF7;
+      color: white;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transform: scale(2);
+      border: transparent;
+  }
+  .input1{
+      position: absolute;
+      top: 300px;
+      left: 525px;
+  }
+  .input2{
+      position: absolute;
+      top: 330px;
+      left: 525px;
+  }
+  .input3{
+      position: absolute;
+      top: 360px;
+      left: 525px;
+  }
+  .input4{
+      position: absolute;
+      top: 430px;
+      left: 525px;
+  }
+  .submit{
+      position: absolute;
+      top: 470px;
+      left: 550px;
+      z-index: 2;
+      background-color: #BFDBF7;
+      padding: 15px;
+      width: 110px;
+      border-radius: 15px;
+      border: transparent;
+      box-shadow: 0px 5px 10px #BFDBF7;
+      transition: 500ms ease;
+  }
+  .submit:hover{
+      background-color: #6daff2;
+      transform: scale(1.1);
+  }
+  .pop{
+      opacity: 0;
+  
+  }
+  .pop-up{
+      opacity: 10;
+      transition: 500ms ease;
+  }
+  .texttext{
+      position: absolute;
+      top: 400px;
+      left: 575px;
+      z-index: 2;
+  }
+  .back{
+      position: absolute;
+      top: 530px;
+      left: 530px;
+      z-index: 2;
+      background-color: #BFDBF7;
+      padding: 20px;
+      width: 150px;
+      border-radius: 15px;
+      border: transparent;
+      box-shadow: 0px 5px 10px #BFDBF7;
+      transition: 500ms ease;
+  }
+  .back:hover{
+      background-color: #6daff2;
+      transform: scale(1.1);
+  }</style>
+</head>
+<body style="background-color: #022B3A;">
+    <h1 class="text1">Enjoy <u>Delicious<br>Food</u> in Your<br>Healthy Life</h1>
+    <h1 class="text2">Savor Every Bite: Experience the Culinary Delight of Nourishing and Flavorful Dishes Tailored to Enhance<br>
+         Your Well-being. Dive into a Gastronomic Adventure Where Health Meets Taste,<br>
+          and Every Plate is a Celebration of Deliciousness in Your<br> Journey Towards a Healthier Life.</h1>
+          <button class="ordernow">Order now</button>
+          <div class="div1"></div>
+          <h1 class="home1">Home</h1>
+          <h1 class="home2">About</h1>
+          <h1 class="home3">Food Menu</h1>
+          <h1 class="home4">Service</h1>
+          <h1 class="home5">Made by: Kerby</h1>
+          <img class="img1" width="500" src="https://elementsofhealthcare.com/wp-content/uploads/2019/06/healthy-dinner-buddha-bowl-lunch-with-chicken-quinoa-grilled-and-fresh-vegetables-.jpg">
+
+          <div class="pop">
+            <img width="250" class="r1" src="https://th.bing.com/th/id/OIP.VCuPCVbXNldlAKghZPh_5wAAAA?rs=1&pid=ImgDetMain">
+<img width="250" class="r2" src="https://www.verywellfit.com/thmb/tivp2mN04SLKcJzg9y-wtx4OUFs=/2578x1537/filters:fill(FFDB5D,1)/chickendinner-56aa06d95f9b58b7d00084ad.jpg">
+<img width="250" class="r3" src="https://i1.wp.com/www.extrachai.com/wp-content/uploads/2018/07/fruit-2367029_1920.jpg?resize=1920%2C1440&ssl=1">
+<button class="button1">Add To Cart</button>
+<button class="button2">Add To Cart</button>
+<button class="button3">Add To Cart</button>
+<input class="input1" type="text">
+<input class="input2" type="text">
+<input class="input3" type="text">
+<input class="input4" type="text">
+<button class="submit">Compute</button>
+<button class="back">check out and pay</button>
+<h1 class="texttext">Total pay</h1>
+<h1 class="q">$10</h1>
+<h1 class="w">$15</h1>
+<h1 class="e">$5</h1>
+
+
+            <div class="bg"></div>
+          </div>
+    <script>var o1 = 0;
+      var o2 = 0;
+      var o3 = 0;
+      var order1 = document.querySelector(".button1");
+      order1.addEventListener(
+          "click", function(){
+              o1 = parseInt(document.querySelector(".input1").value = 10);
+          }
+      )
+      
+      var order2 = document.querySelector(".button2");
+      order2.addEventListener(
+          "click", function(){
+              o2 = parseInt(document.querySelector(".input2").value = 15);
+          }
+      )
+      
+      var order3 = document.querySelector(".button3");
+      order3.addEventListener(
+          "click", function(){
+              o3 = parseInt(document.querySelector(".input3").value = 5);
+          }
+      )
+      
+      document.querySelector(".submit").addEventListener(
+          "click", function(){
+              let result = document.querySelector(".input4").value = o1 + o2 + o3;
+          }
+      )
+      
+      var buttonpop = document.querySelector(".ordernow");
+      
+      buttonpop.addEventListener(
+          "click", function(){
+              let popUp = document.querySelector(".pop");
+              popUp.classList.add("pop-up");
+          }
+      )
+      
+      let back = document.querySelector(".back");
+      
+      back.addEventListener(
+          "click", function(){
+              alert("YOUR ORDER IS SUBMITTED, THANKS FOR BUYING!");
+              location.reload();
+          }
+      )</script>
+</body>
+</html>
